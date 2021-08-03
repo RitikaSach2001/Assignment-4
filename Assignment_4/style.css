@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #BAD4EC;
+    font-weight: 500;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav a:hover{
+    background-color:#083E71;
+    color: white;
+}
+nav figure{
+    padding:2rem;
+}
+nav figure img{
+ height:5rem;
+ cursor: pointer;
+}
+ul{ 
+    margin:0 2px 0 0;
+    display: flex;
+    padding:2rem;
+    justify-content:space-evenly;
+    list-style: none;
+    font-size: 1.4rem;
+}
+ul li{
+    margin:0 2rem 0 2rem;
+    cursor: pointer;
+    color:black;
+    transition:all 0.1s ease;
+}
+ul li a{
+    text-decoration:none;
+    color:black;
+}
+ul li:hover{
+    transform:translateY(-6.8px);
+    border-bottom: 1px solid #219ebc;
+}
+
+section:nth-of-type(1){
+width:100%;
+height:70vh;
+margin: auto;
+animation:images 12s infinite ease-in-out alternate-reverse;
+animation-delay: 2s;
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+}
+
+@keyframes images {
+    0%{
+        background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/samsung-smartphones-1618864389.jpg?crop=0.841xw:0.749xh;0.0978xw,0.194xh&resize=1200:*');
+    }
+    20%{
+        background-image: url('https://d12mivgeuoigbq.cloudfront.net/magento-media/brand-landing-pages/category-img/sa/samsung-appliances-lrg.jpg');
+    }
+    40%{
+        background-image: url('https://miro.medium.com/max/1400/1*6TL2WxcgKnb5duoygl_x_g.png');
+    }
+    80%{
+        background-image: url('https://img.onmanorama.com/content/dam/mm/en/business/gadgets/images/2019/2/21/samsung-galaxy-s-2.jpg');
+    }
+    100%{
+        background-image: url('https://thegadgetflow.com/wp-content/uploads/2020/11/Razer-Arctech-Pro-Galaxy-Note20-case-01-768x432.jpg');
+}
+}
+
+.product{
+    margin:2rem 0 2rem 0;
+text-align: center;
+text-transform: uppercase;
+font-weight: 500;
+}
+.productName
+{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+}
+.productName div{
+    margin:2rem 2rem 2rem 3.3rem;
+    height:20rem;  
+    width:18rem;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition:all 1s ease;
+}
+.productName div:hover{
+    transform: translateY(-3px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+div figure{
+    width:100%;
+    height:10rem;
+}
+div figure img{
+    width:100%;
+    object-fit:fill;
+    object-position:center;
+    height:100%;
+}
+div figcaption{
+    display: flex;
+    height:10rem;
+    padding:1rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+figcaption button{
+    outline:none;
+    width:100%;
+    color:black;
+    background-color:white;
+    cursor: pointer;
+    border-radius:3px;
+    font-size: 1rem;
+    transition:all 0.4s ease;
+}
+figcaption button:hover{
+    color:white;
+    background-color:black;
+}
+body h1,h4,h6{
+    font-weight:300;
+}
+#contactUs{
+ display: flex;
+
+ margin:2rem auto;
+ width: 92%;
+ height:30rem;
+ /* border: 1px solid black; */
+ transition:all 0.4s ease;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#contactUs div:nth-of-type(1){
+    width:40%;
+}
+#contactUs div:nth-of-type(1) img{
+    width:100%;
+    height:100%;
+}
+#contactUs div:nth-of-type(2){
+    width:50%;
+    margin: 0 auto;
+}
+#contactUs:hover{
+    transform: translateY(-4px);
+}
+/* form  styling*/
+.form{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+.form > div{
+    width: 100% !important;
+    height:auto;
+}
+div label{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.form input{
+    width:100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+    transition:all 0.3s ease;
+    font-size: 1rem;
+    color:#219ebc;
+}
+
+textarea{
+    width:100%;
+    font-size:1rem;
+    color:#219ebc;
+}
+textarea:focus{
+    border: 1px solid #219ebc;
+    outline:none;
+}
+#button{
+    width:100%;
+    border:none;
+    height:2rem;
+    cursor:pointer;
+    border-radius:0.3rem;
+    background-color:#219ebc;
+    color:white;
+    transition: all 1s ease;
+}
+.form input:focus{
+    border-bottom: 1px solid #219ebc;
+}
+#button:hover{
+   box-shadow: 2px 2px 0.3rem 1px#219ebc;
+   background-color:white;
+   color:black;
+   transform: rotateX(1turn);
+}
+footer{
+   background-color: #BAD4EC;
+}
+footer{
+    padding:1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;   
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    
+    margin-right: 3px;
+    margin-bottom: 5px;
+   }
+   .footer-icons a:hover{
+   background-color: black;
+   }
+   footer h5{
+       text-align: center;
+       color:white;
+   }
+   @media screen and (max-width: 860px)
+   {
+    ul{
+        font-size:1rem;
+    }
+   }
+   @media screen and (max-width: 764px)
+   {
+     nav{
+        flex-direction: column;
+        justify-content:space-around;
+    } 
+    ul{
+        margin-top: -2rem;
+        flex-direction:column;
+        align-items: center; 
+        font-size: 1.5rem;
+    } 
+    #contactUs{
+        flex-direction: column;
+        height:fit-content;
+        padding:1rem;
+    }
+    #contactUs div:nth-of-type(1){
+        width:80%;
+        margin:0 auto;
+    }
+    #contactUs div:nth-of-type(2){
+        width:80%;
+        margin: 0 auto;
+    }
+}
+   @media screen and (max-width:480px)
+   {
+    .productName div{
+        height: 23rem;
+    }
+    div figcaption{
+        height:13rem;
+        padding:0.1rem 0.1rem 0.1rem 0.1rem ;
+    }
+   }
